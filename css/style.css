@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-size: 10px;
 }
 
 body {
@@ -12,56 +13,56 @@ body {
   align-items: center;
   width: 100%;
   height: 100vh;
-  padding-top: 40px;
+  padding-top: 4rem;
 }
 
 .app {
-  width: 1440px;
+  width: 144rem;
   height: 100%;
-  border-radius: 20px 20px 0 0;
-  border: 1px solid black;
+  border-radius: 2rem 2rem 0 0;
+  border: 0.1rem solid black;
   border-bottom: none;
   overflow: hidden;
   background-color: rgb(0, 0, 0);
-  box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 2rem 1rem rgba(0, 0, 0, 0.2);
 }
 
 .header {
   width: 100%;
-  height: 120px;
+  height: 12rem;
   background-color: rgb(21, 21, 21);
-  font-size: 50px;
+  font-size: 5rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 10px;
+  margin-bottom: 1rem;
 }
 
 .hero {
-  margin: 0 50px;
+  margin: 0 5rem;
   background: linear-gradient(rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05)), url("../img/hero-background.png") center/cover no-repeat;
-  width: 1340px;
-  height: 695px;
-  border-radius: 20px;
+  width: 134rem;
+  height: 69.5rem;
+  border-radius: 2rem;
   position: relative;
 }
 .hero__img {
-  width: 1245.22px;
-  height: 1261.22px;
+  width: 124.522rem;
+  height: 126.122rem;
   position: absolute;
-  top: -131px;
-  left: 155px;
+  top: -13.1rem;
+  left: 15.5rem;
   background: url("../img/hero-triangle.png") center/cover no-repeat;
   opacity: 0.9;
 }
 .hero__content {
-  width: 700px;
-  height: 370px;
+  width: 70rem;
+  height: 37rem;
   display: grid;
   grid-template-rows: repeat(3, 1fr);
   position: relative;
   top: 55%;
-  left: 410px;
+  left: 41rem;
   transform: translate(-50%, -50%);
 }
 .hero__content > div {
@@ -69,34 +70,34 @@ body {
   align-items: center;
 }
 .hero__content__top {
-  border: 1px solid red;
   background: url("../img/hero-logo.svg") left no-repeat;
-  padding-left: 90px;
+  padding-left: 9rem;
   display: inline;
-  font-size: 72.97px;
+  font-size: 7.297rem;
   font-family: Space Grotesk;
   font-weight: 700;
-  letter-spacing: 1.9px;
-  line-height: 77.88px;
+  letter-spacing: 0.19rem;
+  line-height: 7.788rem;
 }
 .hero__content__info {
   font-family: Roboto, sans-serif;
   font-weight: 400;
-  font-size: 34px;
-  line-height: 38.6px;
-  letter-spacing: -1px;
+  font-size: 3.4rem;
+  line-height: 3.86rem;
+  letter-spacing: -0.1rem;
 }
 .hero__content__btn {
   background: linear-gradient(to top left, #feb752, #fc4c25);
-  width: 310px;
-  height: 70px;
-  border-radius: 40px;
+  width: 31rem;
+  height: 7rem;
+  border-radius: 4rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 2rem;
   color: white;
-  font-size: 25px;
+  font-size: 2.5rem;
   font-weight: 600;
-  letter-spacing: -0.8px;
+  letter-spacing: -0.08rem;
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */

@@ -24,10 +24,8 @@ body {
 }
 
 .hero-section {
-    // margin: 0 5rem;
     margin: 0 5vw;
     background: url("../img/hero-background.png") center/cover no-repeat;
-    // width: 134rem;
     width: 90vw;
     height: 69.5rem;
     border-radius: 2rem;
@@ -51,7 +49,7 @@ body {
         left: 80px;
         display: flex;
         flex-direction: column;
-        gap: 30px;
+        gap: 35px;
 
         &-title {
             background: url("../img/hero-logo.svg") left no-repeat;
@@ -105,6 +103,86 @@ body {
                 opacity: 0.85;
                 transform: translate(0, 2px);
             }
+        }
+    }
+}
+
+.discover-section {
+    margin: 12.5rem 5vw;
+    background: linear-gradient(rgba(255, 0, 0, 0.07), rgba(255, 0, 0, 0.07)),
+        url("../img/hero-background.png") center/cover no-repeat;
+    width: 90vw;
+    height: 78rem;
+    border-radius: 2rem;
+    position: relative;
+
+    .splash-of-color {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url("../img/Discover-background.png") right/cover no-repeat;
+        opacity: 0.75;
+        border-radius: 2rem;
+    }
+
+    .discover-app {
+        background: url("../img/Discover-app.png") left/cover no-repeat;
+        // width: 800px;
+        width: 52vw;
+        height: 650px;
+        height: 700px;
+        border: 1px solid rgb(17, 0, 255);
+        position: absolute;
+        right: 0;
+        top: 48px;
+    }
+
+    .discover-content {
+        border: 1px solid red;
+        width: 30vw;
+        height: 428px;
+        position: absolute;
+        top: 17.6rem;
+        left: 6%;
+        display: flex;
+        flex-direction: column;
+
+        .discover-frame {
+            border-radius: 50px;
+            background-color: rgba(255, 255, 255, 0.3);
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2.4rem;
+            font-family: Roboto;
+            font-weight: 600;
+            width: 270px;
+            height: 50px;
+        }
+
+        .discover-header {
+            font-size: 5.8rem;
+            letter-spacing: -2.44px;
+            line-height: 8.45rem;
+            font-family: Ubuntu;
+
+            span {
+                font-size: 5.8rem;
+                letter-spacing: -2.44px;
+                line-height: 8.45rem;
+                font-family: Ubuntu;
+                font-weight: 700;
+            }
+        }
+
+        .discover-text {
+            letter-spacing: -0.84px;
+            line-height: 3.56rem;
+            font-size: 2.4rem;
+            font-family: Roboto;
+            padding-top: 10px;
         }
     }
 }

@@ -23,34 +23,33 @@ body {
 }
 
 .hero-section {
-  margin: 0 5vw;
   background: url("../img/hero-background.png") center/cover no-repeat;
-  width: 90vw;
-  height: 69.5rem;
+  width: 92vw;
   border-radius: 2rem;
+  height: 69.5rem;
+  margin: 0 auto;
 }
 .hero-section .hero-img {
-  width: 80vw;
+  width: 85vw;
   height: 125rem;
   position: absolute;
   right: 0;
   top: 0;
   background: url("../img/hero-triangle.png") center/cover no-repeat;
-  opacity: 0.9;
 }
 .hero-section .hero-content {
   width: 45vw;
   height: 37rem;
   grid-template-rows: repeat(3, 1fr);
   position: relative;
-  top: 222px;
+  top: 214px;
   left: 80px;
 }
 .hero-section .hero-content-title {
   background: url("../img/hero-logo.svg") left no-repeat;
-  padding-left: 9rem;
+  padding-left: 9.5rem;
   display: inline;
-  font-size: 7.297rem;
+  font-size: 7.7rem;
   font-family: Space Grotesk;
   font-weight: 700;
   letter-spacing: 0.19rem;
@@ -62,10 +61,11 @@ body {
   font-size: 3.4rem;
   line-height: 3.86rem;
   letter-spacing: -0.1rem;
-  margin: 35px 0;
+  margin: 45px 0 35px;
 }
 .hero-section .hero-content-btn {
   background: linear-gradient(142deg, #fc4c25 0%, #feb752 100%);
+  font-family: Ubuntu;
   height: 6.7rem;
   border-radius: 4rem;
   margin-top: 1.8rem;
@@ -88,10 +88,10 @@ body {
 }
 
 .discover-section {
-  margin: 12.5rem 5vw;
+  margin: 12.5rem auto;
   background: linear-gradient(rgba(255, 0, 0, 0.07), rgba(255, 0, 0, 0.07)), url("../img/hero-background.png") center/cover no-repeat;
-  width: 90vw;
-  height: 78rem;
+  width: 92vw;
+  height: 82rem;
   border-radius: 2rem;
   position: relative;
 }
@@ -102,7 +102,7 @@ body {
   width: 100%;
   height: 100%;
   background: url("../img/Discover-background.png") right/cover no-repeat;
-  opacity: 0.75;
+  opacity: 0.9;
   border-radius: 2rem;
 }
 .discover-section .discover-app {
@@ -125,14 +125,16 @@ body {
   border-radius: 50px;
   background-color: rgba(255, 255, 255, 0.3);
   display: inline;
-  padding: 16px 24px;
+  padding: 11px 22px;
   font-size: 2.4rem;
   font-family: Roboto;
   font-weight: 600;
+  opacity: 0.8;
+  letter-spacing: -0.9px;
 }
 .discover-section .discover-content .discover-header {
   font-size: 5.8rem;
-  letter-spacing: -2.44px;
+  letter-spacing: -0.5px;
   line-height: 8.45rem;
   font-family: "Ubuntu", sans-serif;
   padding: 20px 0 15px;
@@ -142,7 +144,7 @@ body {
 }
 .discover-section .discover-content .discover-header span {
   font-size: 5.8rem;
-  letter-spacing: -2.44px;
+  letter-spacing: -0.5px;
   line-height: 8.45rem;
   font-family: "Ubuntu", sans-serif;
   padding: 20px 0 15px;
@@ -150,10 +152,10 @@ body {
 }
 .discover-section .discover-content .discover-text {
   letter-spacing: -0.84px;
-  line-height: 3.56rem;
+  line-height: 3.8rem;
   font-size: 2.4rem;
   font-family: Roboto;
-  font-weight: 100;
+  font-weight: 300;
 }
 .discover-section .discover-content .discover-text-padding-top {
   padding-top: 10px;
@@ -164,16 +166,14 @@ body {
   border: 2px solid pink;
 }
 .how-sections .how-section {
-  height: 570px;
-  width: 90vw;
-  border: 1px solid blue;
+  height: 610px;
+  width: 92vw;
   margin: 40px auto;
   border-radius: 2rem;
   position: relative;
   background: url("../img/hero-background.png") center/cover no-repeat;
 }
 .how-sections .splash-of-color {
-  border: 1px solid yellow;
   width: 100%;
   height: 100%;
   border-radius: 2rem;
@@ -187,10 +187,10 @@ body {
 }
 .how-sections .browser-intro .splash-of-color {
   background: linear-gradient(rgba(255, 0, 0, 0.07), rgba(255, 0, 0, 0.07)), url("../img/how1-background.png") right/cover no-repeat;
-  opacity: 0.75;
+  background-position: 150px;
+  opacity: 0.9;
 }
 .how-sections .browser-intro .browser-content {
-  border: 2px solid rgb(30, 255, 0);
   z-index: 2;
   width: 35vw;
   max-height: 600px;
@@ -202,34 +202,59 @@ body {
   border-radius: 50px;
   background-color: rgba(255, 255, 255, 0.3);
   display: inline;
-  padding: 16px 24px;
+  padding: 11px 22px;
   font-size: 2.4rem;
   font-family: Roboto;
   font-weight: 600;
+  opacity: 0.8;
+  letter-spacing: -0.9px;
 }
 .how-sections .browser-intro .browser-content .browser-header {
-  border: 1px solid rgb(0, 242, 255);
   font-size: 5.8rem;
-  letter-spacing: -2.44px;
+  letter-spacing: -0.5px;
   line-height: 8.45rem;
   font-family: "Ubuntu", sans-serif;
   padding: 20px 0 15px;
   white-space: nowrap;
   font-weight: 500;
-  margin: 20px 0;
+  margin-top: 26px;
 }
 .how-sections .browser-intro .browser-content .browser-text {
   letter-spacing: -0.84px;
-  line-height: 3.56rem;
+  line-height: 3.8rem;
   font-size: 2.4rem;
   font-family: Roboto;
-  font-weight: 100;
+  font-weight: 300;
+  margin-bottom: 28px;
+}
+.how-sections .browser-intro .browser-content .browser-btn {
+  font-family: Ubuntu;
+  height: 6.7rem;
+  border-radius: 4rem;
+  margin-top: 1.8rem;
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 600;
+  letter-spacing: -0.08rem;
+  cursor: pointer;
+  opacity: 0.95;
+  transition: opacity 0.1s, transform 0.15s;
+  border: none;
+  padding: 1.6rem 3rem;
+  background: white;
+  color: black;
+}
+.how-sections .browser-intro .browser-content .browser-btn:hover {
+  opacity: 1;
+}
+.how-sections .browser-intro .browser-content .browser-btn:active {
+  opacity: 0.85;
+  transform: translate(0, 2px);
 }
 .how-sections .browser-intro .browser-img {
-  border: 1px solid white;
-  width: 495px;
-  height: 528px;
-  background: url("../img/how1-image.png");
+  width: 535px;
+  height: 550px;
+  background: url("../img/how1-image.png") center/cover no-repeat;
   position: absolute;
   right: 2vw;
   bottom: 0;

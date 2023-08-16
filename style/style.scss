@@ -1,3 +1,5 @@
+@import "./mixin";
+
 * {
     padding: 0;
     margin: 0;
@@ -46,9 +48,6 @@ body {
         position: relative;
         top: 222px;
         left: 80px;
-        display: flex;
-        flex-direction: column;
-        gap: 35px;
 
         &-title {
             background: url("../img/hero-logo.svg") left no-repeat;
@@ -67,6 +66,7 @@ body {
             font-size: 3.4rem;
             line-height: 3.86rem;
             letter-spacing: -0.1rem;
+            margin: 35px 0;
         }
 
         &-btn {
@@ -78,12 +78,9 @@ body {
             // background: url("../img/hero-arrow.svg") cover/right no-repeat;
             // background-size: 10px;
 
-            width: 31rem;
+            // width: 31rem;
             height: 6.7rem;
             border-radius: 4rem;
-            display: flex;
-            justify-content: center;
-            align-items: center;
             margin-top: 1.8rem;
             color: white;
             font-size: 2.5rem;
@@ -93,6 +90,7 @@ body {
             opacity: 0.95;
             transition: opacity 0.1s, transform 0.15s;
             border: none;
+            padding: 1.6rem 3rem;
 
             &:hover {
                 opacity: 1;
@@ -137,58 +135,111 @@ body {
     }
 
     .discover-content {
-        // border: 1px solid red;
         width: 35vw;
         max-height: 495px;
         position: absolute;
         top: 17.6rem;
         top: 13vw;
         left: 6%;
-        display: flex;
-        flex-direction: column;
 
         .discover-frame {
-            border-radius: 50px;
-            background-color: rgba(255, 255, 255, 0.3);
-            display: inline-flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 2.4rem;
-            font-family: Roboto;
-            font-weight: 600;
-            width: 270px;
-            height: 50px;
+            @include gray-frames();
         }
 
         .discover-header {
-            font-size: 5.8rem;
-            letter-spacing: -2.44px;
-            line-height: 8.45rem;
-            font-family: Ubuntu;
-            padding: 20px 0 15px;
+            @include sections-header();
+            font-weight: 100;
             white-space: nowrap;
+            margin: 21px 0 7px;
 
             span {
-                font-size: 5.8rem;
-                letter-spacing: -2.44px;
-                line-height: 8.45rem;
-                font-family: Ubuntu;
+                @include sections-header();
                 font-weight: 700;
             }
         }
 
         .discover-text {
-            letter-spacing: -0.84px;
-            line-height: 3.56rem;
-            font-size: 2.4rem;
-            font-family: Roboto;
-            font-weight: 100;
-            // text-align: justify;
+            @include sections-text();
 
             &-padding-top {
                 padding-top: 10px;
                 overflow: hidden;
             }
+        }
+    }
+}
+
+.how-sections {
+    border: 2px solid pink;
+
+    .how-section {
+        height: 570px;
+        width: 90vw;
+        border: 1px solid blue;
+        margin: 40px auto;
+        border-radius: 2rem;
+        position: relative;
+        background: url("../img/hero-background.png") center/cover no-repeat;
+    }
+
+    .splash-of-color {
+        border: 1px solid yellow;
+        width: 100%;
+        height: 100%;
+        border-radius: 2rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+
+    .browser-intro {
+        position: relative;
+
+        .splash-of-color {
+            background: linear-gradient(
+                    rgba(255, 0, 0, 0.07),
+                    rgba(255, 0, 0, 0.07)
+                ),
+                url("../img/how1-background.png") right/cover no-repeat;
+            opacity: 0.75;
+        }
+
+        .browser-content {
+            border: 2px solid rgb(30, 255, 0);
+            z-index: 2;
+            width: 35vw;
+            max-height: 600px;
+            position: absolute;
+            top: 5vw;
+            left: 6%;
+
+            .introducing-frame {
+                @include gray-frames();
+            }
+
+            .browser-header {
+                border: 1px solid rgb(0, 242, 255);
+                @include sections-header();
+                white-space: nowrap;
+                font-weight: 500;
+                margin: 20px 0;
+            }
+
+            .browser-text {
+                @include sections-text();
+            }
+        }
+
+        .browser-img {
+            border: 1px solid white;
+            width: 495px;
+            height: 528px;
+            background: url("../img/how1-image.png");
+            position: absolute;
+            right: 2vw;
+            bottom: 0;
+            z-index: 2;
         }
     }
 }

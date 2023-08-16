@@ -1,0 +1,25 @@
+@mixin sections-header() {
+    font-size: 5.8rem;
+    letter-spacing: -2.44px;
+    line-height: 8.45rem;
+    font-family: "Ubuntu", sans-serif;
+    padding: 20px 0 15px;
+}
+
+@mixin sections-text() {
+    letter-spacing: -0.84px;
+    line-height: 3.56rem;
+    font-size: 2.4rem;
+    font-family: Roboto;
+    font-weight: 100;
+}
+
+@mixin gray-frames() {
+    border-radius: 50px;
+    background-color: rgba(255, 255, 255, 0.3);
+    display: inline;
+    padding: 16px 24px;
+    font-size: 2.4rem;
+    font-family: Roboto;
+    font-weight: 600;
+}

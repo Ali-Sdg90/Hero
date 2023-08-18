@@ -24,16 +24,32 @@ body {
     border-bottom: 1px solid #333;
 }
 
+.btn-arrow {
+    width: 24px;
+    height: 24px;
+    background: url("../img/Forward-arrow.svg") center/cover no-repeat;
+    // border: 1px solid blue;
+    display: inline-block;
+    margin-left: 12px;
+    position: relative;
+    top: 3px;
+}
+
+.black-arrow {
+    filter: invert(100%) sepia(4%) saturate(916%) hue-rotate(228deg)
+        brightness(112%) contrast(101%);
+}
+
 .hero-section {
     background: url("../img/hero-background.png") center/cover no-repeat;
     width: 92vw;
     border-radius: 2rem;
-    height: 69.5rem;
+    height: 740px;
     margin: 0 auto;
 
     .hero-img {
         width: 85vw;
-        height: 125rem;
+        height: 132rem;
         position: absolute;
         right: 0;
         top: 0;
@@ -45,7 +61,7 @@ body {
         height: 37rem;
         grid-template-rows: repeat(3, 1fr);
         position: relative;
-        top: 214px;
+        top: 240px;
         left: 80px;
 
         &-title {
@@ -160,7 +176,7 @@ body {
     }
 
     .how-section {
-        height: 610px;
+        height: 595px;
         width: 92vw;
         // border: 1px solid blue;
         margin: 40px auto;
@@ -228,11 +244,11 @@ body {
 
         .browser-img {
             // border: 1px solid white;
-            width: 535px;
-            height: 570px;
+            width: 510px;
+            height: 550px;
             background: url("../img/how1-image.png") center/cover no-repeat;
             position: absolute;
-            right: 2vw;
+            right: 3vw;
             bottom: 0;
             z-index: 2;
         }
@@ -247,8 +263,8 @@ body {
             url("../img/hero-background.png") center/cover no-repeat;
 
         .splash-of-color {
-            background:url("../img/how2-background.png") center/cover no-repeat;
-            opacity: 0.80;
+            background: url("../img/how2-background.png") center/cover no-repeat;
+            opacity: 0.8;
             width: 900px;
         }
 
@@ -282,8 +298,8 @@ body {
         }
 
         .telegram-img1 {
-            width: 366px;
-            height: 552px;
+            width: 346px;
+            height: 532px;
             background: url("../img/how2-image1.png") bottom/cover no-repeat;
             position: absolute;
             right: 295px;
@@ -294,11 +310,11 @@ body {
         }
 
         .telegram-img2 {
-            width: 366px;
-            height: 454px;
+            width: 352px;
+            height: 440px;
             background: url("../img/how2-image2.png") bottom/cover no-repeat;
             position: absolute;
-            right: 96px;
+            right: 99px;
             bottom: 0;
             z-index: 2;
             // border: 1px solid red;

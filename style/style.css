@@ -88,7 +88,7 @@ body {
 }
 
 .discover-section {
-  margin: 12.5rem auto;
+  margin: 12.5rem auto 9.5rem;
   background: linear-gradient(rgba(255, 0, 0, 0.07), rgba(255, 0, 0, 0.07)), url("../img/hero-background.png") center/cover no-repeat;
   width: 92vw;
   height: 82rem;
@@ -152,7 +152,7 @@ body {
 }
 .discover-section .discover-content .discover-text {
   letter-spacing: -0.84px;
-  line-height: 3.8rem;
+  line-height: 3.7rem;
   font-size: 2.4rem;
   font-family: Roboto;
   font-weight: 300;
@@ -162,8 +162,13 @@ body {
   overflow: hidden;
 }
 
-.how-sections {
-  border: 2px solid pink;
+.how-sections .how-to-use {
+  font-size: 5.8rem;
+  line-height: 8.45rem;
+  letter-spacing: -2.44px;
+  font-weight: 300;
+  font-family: Ubuntu;
+  padding-left: 114px;
 }
 .how-sections .how-section {
   height: 610px;
@@ -171,7 +176,6 @@ body {
   margin: 40px auto;
   border-radius: 2rem;
   position: relative;
-  background: url("../img/hero-background.png") center/cover no-repeat;
 }
 .how-sections .splash-of-color {
   width: 100%;
@@ -184,9 +188,10 @@ body {
 }
 .how-sections .browser-intro {
   position: relative;
+  background: linear-gradient(rgba(255, 0, 0, 0.07), rgba(255, 0, 0, 0.07)), url("../img/hero-background.png") center/cover no-repeat;
 }
 .how-sections .browser-intro .splash-of-color {
-  background: linear-gradient(rgba(255, 0, 0, 0.07), rgba(255, 0, 0, 0.07)), url("../img/how1-background.png") right/cover no-repeat;
+  background: url("../img/how1-background.png") right/cover no-repeat;
   background-position: 150px;
   opacity: 0.9;
 }
@@ -221,7 +226,7 @@ body {
 }
 .how-sections .browser-intro .browser-content .browser-text {
   letter-spacing: -0.84px;
-  line-height: 3.8rem;
+  line-height: 3.7rem;
   font-size: 2.4rem;
   font-family: Roboto;
   font-weight: 300;
@@ -253,10 +258,89 @@ body {
 }
 .how-sections .browser-intro .browser-img {
   width: 535px;
-  height: 550px;
+  height: 570px;
   background: url("../img/how1-image.png") center/cover no-repeat;
   position: absolute;
   right: 2vw;
   bottom: 0;
   z-index: 2;
+}
+.how-sections .telegram-intro {
+  position: relative;
+  background: linear-gradient(rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.25)), url("../img/hero-background.png") center/cover no-repeat;
+}
+.how-sections .telegram-intro .splash-of-color {
+  background: url("../img/how2-background.png") center/cover no-repeat;
+  opacity: 0.8;
+  width: 900px;
+}
+.how-sections .telegram-intro .telegram-content {
+  z-index: 2;
+  width: 35vw;
+  max-height: 600px;
+  position: absolute;
+  top: 2.8vw;
+  left: 6%;
+}
+.how-sections .telegram-intro .telegram-content .telegram-header {
+  font-size: 5.8rem;
+  letter-spacing: -0.5px;
+  line-height: 8.45rem;
+  font-family: "Ubuntu", sans-serif;
+  padding: 20px 0 15px;
+  white-space: nowrap;
+  font-weight: 500;
+  margin-top: 26px;
+}
+.how-sections .telegram-intro .telegram-content .telegram-text {
+  letter-spacing: -0.84px;
+  line-height: 3.7rem;
+  font-size: 2.4rem;
+  font-family: Roboto;
+  font-weight: 300;
+  margin-bottom: 102px;
+}
+.how-sections .telegram-intro .telegram-content .telegram-btn {
+  font-family: Ubuntu;
+  height: 6.7rem;
+  border-radius: 4rem;
+  margin-top: 1.8rem;
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 600;
+  letter-spacing: -0.08rem;
+  cursor: pointer;
+  opacity: 0.95;
+  transition: opacity 0.1s, transform 0.15s;
+  border: none;
+  padding: 1.6rem 3rem;
+  background: white;
+  color: black;
+}
+.how-sections .telegram-intro .telegram-content .telegram-btn:hover {
+  opacity: 1;
+}
+.how-sections .telegram-intro .telegram-content .telegram-btn:active {
+  opacity: 0.85;
+  transform: translate(0, 2px);
+}
+.how-sections .telegram-intro .telegram-img1 {
+  width: 366px;
+  height: 552px;
+  background: url("../img/how2-image1.png") bottom/cover no-repeat;
+  position: absolute;
+  right: 295px;
+  bottom: 0;
+  z-index: 2;
+  border-radius: 20px 20px 0 0;
+}
+.how-sections .telegram-intro .telegram-img2 {
+  width: 366px;
+  height: 454px;
+  background: url("../img/how2-image2.png") bottom/cover no-repeat;
+  position: absolute;
+  right: 96px;
+  bottom: 0;
+  z-index: 2;
+  border-radius: 20px 20px 0 0;
 }/*# sourceMappingURL=style.css.map */

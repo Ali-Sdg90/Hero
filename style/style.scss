@@ -26,15 +26,15 @@ body {
 // --------------------------------------------------
 
 .btn-arrow {
-    width: 24px;
-    height: 24px;
+    width: 26px;
+    height: 26px;
     background: url("images/landing-page/Forward-arrow.svg") center/cover
         no-repeat;
     // border: 1px solid blue;
     display: inline-block;
     margin-left: 12px;
     position: relative;
-    top: 3px;
+    top: 4px;
 }
 
 .black-arrow {
@@ -137,6 +137,7 @@ body {
         position: absolute;
         // top: min(13vw, 220px);
         top: 220px;
+        top: 14vw;
         left: 6%;
 
         .discover-frame {
@@ -391,6 +392,7 @@ body {
         .check-img {
             // border: 1px solid white;
             width: 665px;
+            // width: 43vw;
             height: 528px;
             background: url("images/landing-page/how3-image.png") center/cover
                 no-repeat;
@@ -501,6 +503,113 @@ body {
             background: url("images/landing-page/tonscan-logo.png") center
                 no-repeat;
             background-size: 170px;
+        }
+    }
+}
+
+.recap-section {
+    margin: 12.5rem auto 9.5rem;
+    background: linear-gradient(
+            rgba(195, 0, 255, 0.11),
+            rgba(195, 0, 255, 0.11)
+        ),
+        url("images/landing-page/hero-background.png") center/cover no-repeat;
+    width: 92vw;
+    height: 92rem;
+    border-radius: 2rem;
+    position: relative;
+    color: white;
+    overflow: hidden;
+
+    .recap-content {
+        // width: 43vw;
+        width: 660px;
+        position: absolute;
+        top: 75px;
+        left: 6%;
+        // border: 1px solid red;
+        z-index: 2;
+
+        .recap-header {
+            @include sections-header();
+            font-weight: 500;
+            padding-left: 15px;
+            margin-bottom: 20px;
+        }
+
+        .recap-text {
+            letter-spacing: -2.3px;
+            line-height: 4.55rem;
+            font-size: 3.5rem;
+            font-family: Ubuntu;
+            padding-top: 40px;
+        }
+
+        .recap-btn {
+            @include sections-btn();
+            margin-top: 85px;
+            margin-left: 13px;
+            background: linear-gradient(142deg, #fc4c25 0%, #feb752 100%);
+        }
+    }
+
+    .recap-img {
+        width: 85vw;
+        max-width: 1186px;
+        height: 920px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        // border: 1px solid red;
+        background: url("images/landing-page/recap-img.png") center/cover
+            no-repeat;
+    }
+}
+
+// ----------------------- Footer -----------------------
+
+.footer-section {
+    width: 100%;
+    height: 80px;
+    color: white;
+    font-family: Ubuntu;
+    font-weight: 500;
+    display: flex;
+    // border: 1px solid red;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+
+    div {
+        font-size: 17px;
+
+        &::selection {
+            background: transparent;
+        }
+    }
+
+    .footer-rights {
+        opacity: 0.4;
+        cursor: default;
+    }
+
+    .footer-btns {
+        // border: 1px solid yellow;
+        display: flex;
+        gap: 40px;
+
+        div {
+            opacity: 0.4;
+            cursor: pointer;
+            transition: opacity 0.15s;
+
+            &:hover {
+                opacity: 0.8;
+            }
+
+            &:active {
+                opacity: 0.4;
+            }
         }
     }
 }

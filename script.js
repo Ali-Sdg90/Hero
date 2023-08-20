@@ -1,7 +1,8 @@
 document.body.style.transition = "box-shadow 0.2s";
 
 function updateBorder() {
-    const minWidth = 1090;
+    // const minWidth = 1090;
+    const minWidth = 1365;
     const currentWidth = window.innerWidth;
 
     if (currentWidth < minWidth) {

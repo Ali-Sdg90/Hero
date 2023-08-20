@@ -22,13 +22,13 @@ body {
 }
 
 .btn-arrow {
-  width: 24px;
-  height: 24px;
+  width: 26px;
+  height: 26px;
   background: url("images/landing-page/Forward-arrow.svg") center/cover no-repeat;
   display: inline-block;
   margin-left: 12px;
   position: relative;
-  top: 3px;
+  top: 4px;
 }
 
 .black-arrow {
@@ -135,6 +135,7 @@ body {
   max-height: 495px;
   position: absolute;
   top: 220px;
+  top: 14vw;
   left: 6%;
 }
 .discover-section .discover-content .discover-frame {
@@ -524,4 +525,113 @@ body {
 .work-seamlessly-section .work-seamlessly-logo .logo-img3 {
   background: url("images/landing-page/tonscan-logo.png") center no-repeat;
   background-size: 170px;
+}
+
+.recap-section {
+  margin: 12.5rem auto 9.5rem;
+  background: linear-gradient(rgba(195, 0, 255, 0.11), rgba(195, 0, 255, 0.11)), url("images/landing-page/hero-background.png") center/cover no-repeat;
+  width: 92vw;
+  height: 92rem;
+  border-radius: 2rem;
+  position: relative;
+  color: white;
+  overflow: hidden;
+}
+.recap-section .recap-content {
+  width: 660px;
+  position: absolute;
+  top: 75px;
+  left: 6%;
+  z-index: 2;
+}
+.recap-section .recap-content .recap-header {
+  font-size: 5.8rem;
+  letter-spacing: -0.5px;
+  line-height: 8.45rem;
+  font-family: "Ubuntu", sans-serif;
+  padding: 20px 0 15px;
+  font-weight: 500;
+  padding-left: 15px;
+  margin-bottom: 20px;
+}
+.recap-section .recap-content .recap-text {
+  letter-spacing: -2.3px;
+  line-height: 4.55rem;
+  font-size: 3.5rem;
+  font-family: Ubuntu;
+  padding-top: 40px;
+}
+.recap-section .recap-content .recap-btn {
+  font-family: Ubuntu;
+  height: 6.7rem;
+  border-radius: 4rem;
+  margin-top: 1.8rem;
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 600;
+  letter-spacing: -0.08rem;
+  cursor: pointer;
+  opacity: 0.95;
+  transition: opacity 0.1s, transform 0.15s;
+  border: none;
+  padding: 1.6rem 3rem;
+  margin-top: 85px;
+  margin-left: 13px;
+  background: linear-gradient(142deg, #fc4c25 0%, #feb752 100%);
+}
+.recap-section .recap-content .recap-btn:hover {
+  opacity: 1;
+}
+.recap-section .recap-content .recap-btn:active {
+  opacity: 0.85;
+  transform: translate(0, 2px);
+}
+.recap-section .recap-img {
+  width: 85vw;
+  max-width: 1186px;
+  height: 920px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: url("images/landing-page/recap-img.png") center/cover no-repeat;
+}
+
+.footer-section {
+  width: 100%;
+  height: 80px;
+  color: white;
+  font-family: Ubuntu;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+}
+.footer-section div {
+  font-size: 17px;
+}
+.footer-section div::-moz-selection {
+  background: transparent;
+}
+.footer-section div::selection {
+  background: transparent;
+}
+.footer-section .footer-rights {
+  opacity: 0.4;
+  cursor: default;
+}
+.footer-section .footer-btns {
+  display: flex;
+  gap: 40px;
+}
+.footer-section .footer-btns div {
+  opacity: 0.4;
+  cursor: pointer;
+  transition: opacity 0.15s;
+}
+.footer-section .footer-btns div:hover {
+  opacity: 0.8;
+}
+.footer-section .footer-btns div:active {
+  opacity: 0.4;
 }/*# sourceMappingURL=style.css.map */

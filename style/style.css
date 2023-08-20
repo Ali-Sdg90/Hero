@@ -468,12 +468,15 @@ body {
   outline: none;
 }
 .how-sections .check-intro .check-wallet-adrs .wallet-btn {
-  background: #FF5C11;
+  background: #ff5c11;
   border: none;
   border-radius: 50%;
   padding: 12px;
   width: 54px;
   height: 54px;
+  cursor: pointer;
+  opacity: 0.95;
+  transition: opacity 0.15s;
 }
 .how-sections .check-intro .check-wallet-adrs .wallet-btn .btn-arrow {
   margin: 0;
@@ -481,4 +484,44 @@ body {
   height: 29px;
   position: relative;
   top: 0px;
+}
+.how-sections .check-intro .check-wallet-adrs .wallet-btn:hover {
+  opacity: 1;
+}
+.how-sections .check-intro .check-wallet-adrs .wallet-btn:active {
+  opacity: 0.9;
+}
+
+.work-seamlessly-section {
+  margin: 185px auto 120px auto;
+  width: 969px;
+}
+.work-seamlessly-section .work-seamlessly-text {
+  letter-spacing: -1.44px;
+  font-weight: 300;
+  font-size: 5.8rem;
+  font-family: Ubuntu;
+  text-align: center;
+  padding-right: 30px;
+}
+.work-seamlessly-section .work-seamlessly-logo {
+  margin-top: 67px;
+  display: flex;
+  margin: 62px 50px 0;
+}
+.work-seamlessly-section .work-seamlessly-logo div {
+  width: 100%;
+  height: 60px;
+}
+.work-seamlessly-section .work-seamlessly-logo .logo-img1 {
+  background: url("images/landing-page/tonapi-logo.png") center no-repeat;
+  background-size: 180px;
+}
+.work-seamlessly-section .work-seamlessly-logo .logo-img2 {
+  background: url("images/landing-page/fragment-logo.png") center no-repeat;
+  background-size: 180px;
+}
+.work-seamlessly-section .work-seamlessly-logo .logo-img3 {
+  background: url("images/landing-page/tonscan-logo.png") center no-repeat;
+  background-size: 170px;
 }/*# sourceMappingURL=style.css.map */

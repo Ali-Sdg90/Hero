@@ -134,12 +134,12 @@ body {
   width: 35vw;
   max-height: 495px;
   position: absolute;
-  top: min(13vw, 220px);
+  top: 220px;
   left: 6%;
 }
 .discover-section .discover-content .discover-frame {
   border-radius: 50px;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.28);
   display: inline;
   padding: 11px 22px;
   font-size: 2.4rem;
@@ -224,7 +224,7 @@ body {
 }
 .how-sections .browser-intro .browser-content .introducing-frame {
   border-radius: 50px;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.28);
   display: inline;
   padding: 11px 22px;
   font-size: 2.4rem;
@@ -318,7 +318,6 @@ body {
   font-family: Roboto;
   font-weight: 300;
   margin-bottom: 6.6vw;
-  margin-bottom: min(3vw, 102px);
 }
 .how-sections .telegram-intro .telegram-content .telegram-btn {
   font-family: Ubuntu;
@@ -364,4 +363,122 @@ body {
   bottom: 0;
   z-index: 2;
   border-radius: 20px 20px 0 0;
+}
+.how-sections .check-intro {
+  position: relative;
+  background: linear-gradient(rgba(47, 255, 0, 0.08), rgba(47, 255, 0, 0.08)), url("images/landing-page/hero-background.png") center/cover no-repeat;
+}
+.how-sections .check-intro .splash-of-color {
+  background: url("images/landing-page/how3-background.png") right/cover no-repeat;
+  background-position: 220px;
+  opacity: 0.7;
+}
+.how-sections .check-intro .check-content {
+  z-index: 2;
+  width: 35vw;
+  max-height: 600px;
+  position: absolute;
+  top: 5vw;
+  left: 6%;
+}
+.how-sections .check-intro .check-content .introducing-frame {
+  border-radius: 50px;
+  background-color: rgba(255, 255, 255, 0.28);
+  display: inline;
+  padding: 11px 22px;
+  font-size: 2.4rem;
+  font-family: Roboto;
+  font-weight: 600;
+  opacity: 0.8;
+  letter-spacing: -0.9px;
+}
+.how-sections .check-intro .check-content .check-header {
+  font-size: 5.8rem;
+  letter-spacing: -0.5px;
+  line-height: 8.45rem;
+  font-family: "Ubuntu", sans-serif;
+  padding: 20px 0 15px;
+  white-space: nowrap;
+  font-weight: 500;
+  margin-top: 26px;
+}
+.how-sections .check-intro .check-content .check-text {
+  letter-spacing: -0.84px;
+  line-height: 3.7rem;
+  font-size: 2.4rem;
+  font-family: Roboto;
+  font-weight: 300;
+  margin-bottom: 28px;
+}
+.how-sections .check-intro .check-content .check-btn {
+  font-family: Ubuntu;
+  height: 6.7rem;
+  border-radius: 4rem;
+  margin-top: 1.8rem;
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 600;
+  letter-spacing: -0.08rem;
+  cursor: pointer;
+  opacity: 0.95;
+  transition: opacity 0.1s, transform 0.15s;
+  border: none;
+  padding: 1.6rem 3rem;
+  background: white;
+  color: black;
+}
+.how-sections .check-intro .check-content .check-btn:hover {
+  opacity: 1;
+}
+.how-sections .check-intro .check-content .check-btn:active {
+  opacity: 0.85;
+  transform: translate(0, 2px);
+}
+.how-sections .check-intro .check-img {
+  width: 665px;
+  height: 528px;
+  background: url("images/landing-page/how3-image.png") center/cover no-repeat;
+  position: absolute;
+  right: 5.2vw;
+  bottom: 1vw;
+  z-index: 2;
+}
+.how-sections .check-intro .check-wallet-adrs {
+  width: 426px;
+  height: 68px;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: rgba(0, 0, 0, 0.65);
+  position: relative;
+  top: 20px;
+  right: 12px;
+}
+.how-sections .check-intro .check-wallet-adrs .wallet-input {
+  padding: 16px 0 16px 25px;
+  width: 358px;
+  height: 64px;
+  border: none;
+  background-color: transparent;
+  color: rgb(255, 243, 237);
+  font-size: 18px;
+}
+.how-sections .check-intro .check-wallet-adrs .wallet-input:focus {
+  outline: none;
+}
+.how-sections .check-intro .check-wallet-adrs .wallet-btn {
+  background: #FF5C11;
+  border: none;
+  border-radius: 50%;
+  padding: 12px;
+  width: 54px;
+  height: 54px;
+}
+.how-sections .check-intro .check-wallet-adrs .wallet-btn .btn-arrow {
+  margin: 0;
+  width: 29px;
+  height: 29px;
+  position: relative;
+  top: 0px;
 }/*# sourceMappingURL=style.css.map */

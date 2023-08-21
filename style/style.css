@@ -129,6 +129,7 @@ body {
   position: absolute;
   right: 0;
   top: 48px;
+  z-index: 1;
 }
 .discover-section .discover-content {
   width: 35vw;
@@ -137,6 +138,7 @@ body {
   top: 220px;
   top: 14vw;
   left: 6%;
+  z-index: 2;
 }
 .discover-section .discover-content .discover-frame {
   border-radius: 50px;
@@ -182,7 +184,8 @@ body {
 .how-sections {
   color: white;
 }
-.how-sections .how-to-use {
+
+.how-to-use {
   font-size: 5.8rem;
   line-height: 8.45rem;
   letter-spacing: -2.44px;
@@ -190,14 +193,16 @@ body {
   font-family: Ubuntu;
   padding-left: 114px;
 }
-.how-sections .how-section {
+
+.how-section {
   height: 595px;
   width: 92vw;
   margin: 40px auto;
   border-radius: 2rem;
   position: relative;
 }
-.how-sections .splash-of-color {
+
+.splash-of-color {
   width: 100%;
   height: 100%;
   border-radius: 2rem;
@@ -206,16 +211,17 @@ body {
   left: 0;
   z-index: 1;
 }
-.how-sections .browser-intro {
+
+.browser-intro {
   position: relative;
   background: linear-gradient(rgba(255, 0, 0, 0.07), rgba(255, 0, 0, 0.07)), url("images/landing-page/hero-background.png") center/cover no-repeat;
 }
-.how-sections .browser-intro .splash-of-color {
+.browser-intro .splash-of-color {
   background: url("images/landing-page/how1-background.png") right/cover no-repeat;
   background-position: 150px;
   opacity: 0.9;
 }
-.how-sections .browser-intro .browser-content {
+.browser-intro .browser-content {
   z-index: 2;
   width: 35vw;
   max-height: 600px;
@@ -223,7 +229,7 @@ body {
   top: 5vw;
   left: 6%;
 }
-.how-sections .browser-intro .browser-content .introducing-frame {
+.browser-intro .browser-content .introducing-frame {
   border-radius: 50px;
   background-color: rgba(255, 255, 255, 0.28);
   display: inline;
@@ -234,7 +240,7 @@ body {
   opacity: 0.8;
   letter-spacing: -0.9px;
 }
-.how-sections .browser-intro .browser-content .browser-header {
+.browser-intro .browser-content .browser-header {
   font-size: 5.8rem;
   letter-spacing: -0.5px;
   line-height: 8.45rem;
@@ -244,7 +250,7 @@ body {
   font-weight: 500;
   margin-top: 26px;
 }
-.how-sections .browser-intro .browser-content .browser-text {
+.browser-intro .browser-content .browser-text {
   letter-spacing: -0.84px;
   line-height: 3.7rem;
   font-size: 2.4rem;
@@ -252,7 +258,7 @@ body {
   font-weight: 300;
   margin-bottom: 28px;
 }
-.how-sections .browser-intro .browser-content .browser-btn {
+.browser-intro .browser-content .browser-btn {
   font-family: Ubuntu;
   height: 6.7rem;
   border-radius: 4rem;
@@ -269,14 +275,14 @@ body {
   background: white;
   color: black;
 }
-.how-sections .browser-intro .browser-content .browser-btn:hover {
+.browser-intro .browser-content .browser-btn:hover {
   opacity: 1;
 }
-.how-sections .browser-intro .browser-content .browser-btn:active {
+.browser-intro .browser-content .browser-btn:active {
   opacity: 0.85;
   transform: translate(0, 2px);
 }
-.how-sections .browser-intro .browser-img {
+.browser-intro .browser-img {
   width: 510px;
   height: 550px;
   background: url("images/landing-page/how1-image.png") center/cover no-repeat;
@@ -285,16 +291,17 @@ body {
   bottom: 0;
   z-index: 2;
 }
-.how-sections .telegram-intro {
+
+.telegram-intro {
   position: relative;
   background: linear-gradient(rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.25)), url("images/landing-page/hero-background.png") center/cover no-repeat;
 }
-.how-sections .telegram-intro .splash-of-color {
+.telegram-intro .splash-of-color {
   background: url("images/landing-page/how2-background.png") center/cover no-repeat;
   opacity: 0.8;
   width: 900px;
 }
-.how-sections .telegram-intro .telegram-content {
+.telegram-intro .telegram-content {
   z-index: 2;
   width: 35vw;
   max-height: 600px;
@@ -302,7 +309,7 @@ body {
   top: 2.8vw;
   left: 6%;
 }
-.how-sections .telegram-intro .telegram-content .telegram-header {
+.telegram-intro .telegram-content .telegram-header {
   font-size: 5.8rem;
   letter-spacing: -0.5px;
   line-height: 8.45rem;
@@ -312,7 +319,7 @@ body {
   font-weight: 500;
   margin-top: 26px;
 }
-.how-sections .telegram-intro .telegram-content .telegram-text {
+.telegram-intro .telegram-content .telegram-text {
   letter-spacing: -0.84px;
   line-height: 3.7rem;
   font-size: 2.4rem;
@@ -320,7 +327,7 @@ body {
   font-weight: 300;
   margin-bottom: 6.6vw;
 }
-.how-sections .telegram-intro .telegram-content .telegram-btn {
+.telegram-intro .telegram-content .telegram-btn {
   font-family: Ubuntu;
   height: 6.7rem;
   border-radius: 4rem;
@@ -337,14 +344,14 @@ body {
   background: white;
   color: black;
 }
-.how-sections .telegram-intro .telegram-content .telegram-btn:hover {
+.telegram-intro .telegram-content .telegram-btn:hover {
   opacity: 1;
 }
-.how-sections .telegram-intro .telegram-content .telegram-btn:active {
+.telegram-intro .telegram-content .telegram-btn:active {
   opacity: 0.85;
   transform: translate(0, 2px);
 }
-.how-sections .telegram-intro .telegram-img1 {
+.telegram-intro .telegram-img1 {
   width: 346px;
   height: 532px;
   background: url("images/landing-page/how2-image1.png") bottom/cover no-repeat;
@@ -354,7 +361,7 @@ body {
   z-index: 2;
   border-radius: 20px 20px 0 0;
 }
-.how-sections .telegram-intro .telegram-img2 {
+.telegram-intro .telegram-img2 {
   width: 352px;
   height: 440px;
   background: url("images/landing-page/how2-image2.png") bottom/cover no-repeat;
@@ -365,16 +372,17 @@ body {
   z-index: 2;
   border-radius: 20px 20px 0 0;
 }
-.how-sections .check-intro {
+
+.check-intro {
   position: relative;
   background: linear-gradient(rgba(47, 255, 0, 0.08), rgba(47, 255, 0, 0.08)), url("images/landing-page/hero-background.png") center/cover no-repeat;
 }
-.how-sections .check-intro .splash-of-color {
+.check-intro .splash-of-color {
   background: url("images/landing-page/how3-background.png") right/cover no-repeat;
   background-position: 220px;
   opacity: 0.7;
 }
-.how-sections .check-intro .check-content {
+.check-intro .check-content {
   z-index: 2;
   width: 35vw;
   max-height: 600px;
@@ -382,7 +390,7 @@ body {
   top: 5vw;
   left: 6%;
 }
-.how-sections .check-intro .check-content .introducing-frame {
+.check-intro .check-content .introducing-frame {
   border-radius: 50px;
   background-color: rgba(255, 255, 255, 0.28);
   display: inline;
@@ -393,7 +401,7 @@ body {
   opacity: 0.8;
   letter-spacing: -0.9px;
 }
-.how-sections .check-intro .check-content .check-header {
+.check-intro .check-content .check-header {
   font-size: 5.8rem;
   letter-spacing: -0.5px;
   line-height: 8.45rem;
@@ -403,7 +411,7 @@ body {
   font-weight: 500;
   margin-top: 26px;
 }
-.how-sections .check-intro .check-content .check-text {
+.check-intro .check-content .check-text {
   letter-spacing: -0.84px;
   line-height: 3.7rem;
   font-size: 2.4rem;
@@ -411,7 +419,7 @@ body {
   font-weight: 300;
   margin-bottom: 28px;
 }
-.how-sections .check-intro .check-content .check-btn {
+.check-intro .check-content .check-btn {
   font-family: Ubuntu;
   height: 6.7rem;
   border-radius: 4rem;
@@ -428,14 +436,14 @@ body {
   background: white;
   color: black;
 }
-.how-sections .check-intro .check-content .check-btn:hover {
+.check-intro .check-content .check-btn:hover {
   opacity: 1;
 }
-.how-sections .check-intro .check-content .check-btn:active {
+.check-intro .check-content .check-btn:active {
   opacity: 0.85;
   transform: translate(0, 2px);
 }
-.how-sections .check-intro .check-img {
+.check-intro .check-img {
   width: 665px;
   height: 528px;
   background: url("images/landing-page/how3-image.png") center/cover no-repeat;
@@ -444,7 +452,7 @@ body {
   bottom: 1vw;
   z-index: 2;
 }
-.how-sections .check-intro .check-wallet-adrs {
+.check-intro .check-wallet-adrs {
   width: 426px;
   height: 68px;
   border-radius: 40px;
@@ -456,7 +464,7 @@ body {
   top: 20px;
   right: 12px;
 }
-.how-sections .check-intro .check-wallet-adrs .wallet-input {
+.check-intro .check-wallet-adrs .wallet-input {
   padding: 16px 0 16px 25px;
   width: 358px;
   height: 64px;
@@ -465,10 +473,10 @@ body {
   color: rgb(255, 243, 237);
   font-size: 18px;
 }
-.how-sections .check-intro .check-wallet-adrs .wallet-input:focus {
+.check-intro .check-wallet-adrs .wallet-input:focus {
   outline: none;
 }
-.how-sections .check-intro .check-wallet-adrs .wallet-btn {
+.check-intro .check-wallet-adrs .wallet-btn {
   background: #ff5c11;
   border: none;
   border-radius: 50%;
@@ -479,17 +487,17 @@ body {
   opacity: 0.95;
   transition: opacity 0.15s;
 }
-.how-sections .check-intro .check-wallet-adrs .wallet-btn .btn-arrow {
+.check-intro .check-wallet-adrs .wallet-btn .btn-arrow {
   margin: 0;
   width: 29px;
   height: 29px;
   position: relative;
   top: 0px;
 }
-.how-sections .check-intro .check-wallet-adrs .wallet-btn:hover {
+.check-intro .check-wallet-adrs .wallet-btn:hover {
   opacity: 1;
 }
-.how-sections .check-intro .check-wallet-adrs .wallet-btn:active {
+.check-intro .check-wallet-adrs .wallet-btn:active {
   opacity: 0.9;
 }
 
@@ -633,5 +641,5 @@ body {
   opacity: 0.8;
 }
 .footer-section .footer-btns div:active {
-  opacity: 0.4;
+  opacity: 0.6;
 }/*# sourceMappingURL=style.css.map */

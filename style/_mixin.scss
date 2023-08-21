@@ -1,3 +1,17 @@
+@import "colors";
+
+@mixin customize($theme: $selected-theme) {
+    $array: map-get($themes, $theme);
+    $array-map: () !global;
+
+    @each $key, $value in $array {
+        $array-map: map-merge($array-map, ($key: $value)) !global;
+    }
+
+    @content;
+    $array-map: null !global;
+}
+
 @mixin sections-header() {
     font-size: 5.8rem;
     letter-spacing: -0.5px;

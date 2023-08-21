@@ -7,7 +7,6 @@
 
 body {
   background-color: #000;
-  color: white;
   width: 100%;
 }
 
@@ -22,13 +21,14 @@ body {
 }
 
 .btn-arrow {
-  width: 26px;
-  height: 26px;
+  width: 2.6rem;
+  height: 2.6rem;
   background: url("images/landing-page/Forward-arrow.svg") center/cover no-repeat;
+  /* border: 0.1rem solid blue; */
   display: inline-block;
-  margin-left: 12px;
+  margin-left: 1.2rem;
   position: relative;
-  top: 4px;
+  top: 0.4rem;
 }
 
 .black-arrow {
@@ -39,13 +39,13 @@ body {
   background: url("images/landing-page/hero-background.png") center/cover no-repeat;
   width: 92vw;
   border-radius: 2rem;
-  height: 740px;
+  height: 74rem;
   margin: 1rem auto 0;
   color: white;
 }
 .hero-section .hero-img {
   width: 85vw;
-  max-width: 1390px;
+  max-width: 139rem;
   height: 132rem;
   position: absolute;
   right: 0;
@@ -57,12 +57,12 @@ body {
   height: 37rem;
   grid-template-rows: repeat(3, 1fr);
   position: relative;
-  top: 240px;
-  left: 80px;
+  top: 24rem;
+  left: 8rem;
 }
 .hero-section .hero-content-title {
   background: url("images/landing-page/hero-logo.svg") left no-repeat;
-  padding-left: 9.5rem;
+  padding-left: 0.95rem;
   display: inline;
   font-size: 7.7rem;
   font-family: Space Grotesk;
@@ -76,7 +76,7 @@ body {
   font-size: 3.4rem;
   line-height: 3.86rem;
   letter-spacing: -0.1rem;
-  margin: 45px 0 35px;
+  margin: 4.5rem 0 3.5rem;
 }
 .hero-section .hero-content-btn {
   font-family: Ubuntu;
@@ -109,7 +109,7 @@ body {
   height: 82rem;
   border-radius: 2rem;
   position: relative;
-  color: white;
+  color: #ffffff;
 }
 .discover-section .splash-of-color {
   position: absolute;
@@ -504,6 +504,7 @@ body {
 .work-seamlessly-section {
   margin: 185px auto 120px auto;
   width: 969px;
+  color: white;
 }
 .work-seamlessly-section .work-seamlessly-text {
   letter-spacing: -1.44px;

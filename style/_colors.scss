@@ -1,0 +1,13 @@
+$themes: (
+    light: (
+        TextColor: #000000,
+    ),
+    dark: (
+        TextColor: #ffffff,
+        BtnOrange: #fc4c25,
+        BtnYellow: #feb752,
+        RedHaze: #ff000012,
+    ),
+);
+
+$selected-theme: dark !default;

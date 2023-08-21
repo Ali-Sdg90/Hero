@@ -18,6 +18,19 @@ body {
   justify-content: center;
   align-items: center;
   border-bottom: 1px solid #333;
+  color: white;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 10px;
+}
+
+body {
+  background-color: #000;
+  width: 100%;
 }
 
 .btn-arrow {
@@ -44,7 +57,7 @@ body {
   color: white;
 }
 .hero-section .hero-img {
-  width: 85vw;
+  width: 84vw;
   max-width: 139rem;
   height: 132rem;
   position: absolute;
@@ -62,7 +75,7 @@ body {
 }
 .hero-section .hero-content-title {
   background: url("images/landing-page/hero-logo.svg") left no-repeat;
-  padding-left: 0.95rem;
+  padding-left: 9.5rem;
   display: inline;
   font-size: 7.7rem;
   font-family: Space Grotesk;
@@ -135,8 +148,7 @@ body {
   width: 35vw;
   max-height: 495px;
   position: absolute;
-  top: 220px;
-  top: 14vw;
+  top: 13vw;
   left: 6%;
   z-index: 2;
 }
@@ -182,7 +194,7 @@ body {
 }
 
 .how-sections {
-  color: white;
+  color: #ffffff;
 }
 
 .how-to-use {
@@ -272,8 +284,8 @@ body {
   transition: opacity 0.1s, transform 0.15s;
   border: none;
   padding: 1.6rem 3rem;
-  background: white;
-  color: black;
+  background-color: #ffffff;
+  color: #000000;
 }
 .browser-intro .browser-content .browser-btn:hover {
   opacity: 1;
@@ -341,8 +353,8 @@ body {
   transition: opacity 0.1s, transform 0.15s;
   border: none;
   padding: 1.6rem 3rem;
-  background: white;
-  color: black;
+  background-color: #ffffff;
+  color: #000000;
 }
 .telegram-intro .telegram-content .telegram-btn:hover {
   opacity: 1;
@@ -433,8 +445,8 @@ body {
   transition: opacity 0.1s, transform 0.15s;
   border: none;
   padding: 1.6rem 3rem;
-  background: white;
-  color: black;
+  background-color: #ffffff;
+  color: #000000;
 }
 .check-intro .check-content .check-btn:hover {
   opacity: 1;
@@ -459,7 +471,7 @@ body {
   display: flex;
   align-items: center;
   gap: 8px;
-  background-color: rgba(0, 0, 0, 0.65);
+  background-color: rgba(0, 0, 0, 0.6509803922);
   position: relative;
   top: 20px;
   right: 12px;
@@ -477,7 +489,7 @@ body {
   outline: none;
 }
 .check-intro .check-wallet-adrs .wallet-btn {
-  background: #ff5c11;
+  background-color: #ff5c11;
   border: none;
   border-radius: 50%;
   padding: 12px;
@@ -504,7 +516,7 @@ body {
 .work-seamlessly-section {
   margin: 185px auto 120px auto;
   width: 969px;
-  color: white;
+  color: #ffffff;
 }
 .work-seamlessly-section .work-seamlessly-text {
   letter-spacing: -1.44px;
@@ -543,7 +555,7 @@ body {
   height: 92rem;
   border-radius: 2rem;
   position: relative;
-  color: white;
+  color: #ffffff;
   overflow: hidden;
 }
 .recap-section .recap-content {

@@ -1,3 +1,4 @@
+@import "config";
 @import "colors";
 @import "mixin";
 @import "functions";
@@ -14,14 +15,6 @@
     top: 0.4rem;
 }
 
-// @include customize() {
-//     @function getValue($key) {
-//         @return map-get($array-map, $key);
-//     }
-
-//     color: getValue(TextColor);
-// }
-
 .black-arrow {
     filter: invert(100%) sepia(4%) saturate(916%) hue-rotate(228deg)
         brightness(112%) contrast(101%);
@@ -37,7 +30,7 @@
     color: white;
 
     .hero-img {
-        width: 85vw;
+        width: 84vw;
         max-width: 139rem;
         height: 132rem;
         position: absolute;
@@ -57,7 +50,7 @@
 
         &-title {
             background: url("images/landing-page/hero-logo.svg") left no-repeat;
-            padding-left: 0.95rem;
+            padding-left: 9.5rem;
             display: inline;
             font-size: 7.7rem;
             font-family: Space Grotesk;
@@ -91,7 +84,7 @@
     border-radius: 2rem;
     position: relative;
 
-    @include customize(dark) {
+    @include customize() {
         color: getValue(TextColor);
     }
     // color: red;
@@ -126,8 +119,7 @@
         max-height: 495px;
         position: absolute;
         // top: min(13vw, 220px);
-        top: 220px;
-        top: 14vw;
+        top: 13vw;
         left: 6%;
         z-index: 2;
 
@@ -160,7 +152,9 @@
 
 .how-sections {
     // border: 2px solid pink;
-    color: white;
+    @include customize() {
+        color: getValue(TextColor);
+    }
 }
 
 .how-to-use {
@@ -232,8 +226,12 @@
 
         .browser-btn {
             @include sections-btn();
-            background: white;
-            color: black;
+            @include customize() {
+                background-color: getValue(BtnWhite);
+            }
+            @include customize() {
+                color: getValue(TextColorSec);
+            }
         }
     }
 
@@ -290,8 +288,12 @@
 
         .telegram-btn {
             @include sections-btn();
-            background: white;
-            color: black;
+            @include customize() {
+                background-color: getValue(BtnWhite);
+            }
+            @include customize() {
+                color: getValue(TextColorSec);
+            }
         }
     }
 
@@ -363,8 +365,12 @@
 
         .check-btn {
             @include sections-btn();
-            background: white;
-            color: black;
+            @include customize() {
+                background-color: getValue(BtnWhite);
+            }
+            @include customize() {
+                color: getValue(TextColorSec);
+            }
         }
     }
 
@@ -389,7 +395,9 @@
         display: flex;
         align-items: center;
         gap: 8px;
-        background-color: rgba(0, 0, 0, 0.65);
+        @include customize() {
+            background-color: getValue(walletBackground);
+        }
         position: relative;
         top: 20px;
         right: 12px;
@@ -410,7 +418,9 @@
         }
 
         .wallet-btn {
-            background: #ff5c11;
+            @include customize() {
+                background-color: getValue(walletBtn);
+            }
             border: none;
             border-radius: 50%;
             padding: 12px;
@@ -443,7 +453,9 @@
     margin: 185px auto 120px auto;
     // border: 1px solid blue;
     width: 969px;
-    color: white;
+    @include customize() {
+        color: getValue(TextColor);
+    }
 
     .work-seamlessly-text {
         letter-spacing: -1.44px;
@@ -497,7 +509,9 @@
     height: 92rem;
     border-radius: 2rem;
     position: relative;
-    color: white;
+    @include customize() {
+        color: getValue(TextColor);
+    }
     overflow: hidden;
 
     .recap-content {

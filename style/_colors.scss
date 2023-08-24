@@ -1,22 +1,74 @@
 $themes: (
     light: (
+        // temp
+        Background-color: #f3f2f2,
+
         TextColor: #000000,
+        TextColorSec: #ffffff,
+
+        walletBackground: #f3f2f2,
+        walletBtn: #ff5c11,
+
+        Section-background-img:
+            url("images/landing-page/Light/hero-background.png") center/cover
+            no-repeat,
+        Hero-title-background: url("images/landing-page/Light/hero-logo.png")
+            left no-repeat,
+        Frame-background: rgba(255, 255, 255, 0.7),
+        Discover-image: url("images/landing-page/Light/Discover-app.png")
+            left/cover no-repeat,
+        Browser-image: url("images/landing-page/Light/how1-image.png")
+            center/cover no-repeat,
+        BtnWhite: #ff5c11,
+        Telegram-image1: url("images/landing-page/Light/how2-image1.png")
+            bottom/cover no-repeat,
+        Telegram-image2: url("images/landing-page/Light/how2-image2.png")
+            bottom/cover no-repeat,
+        check-image: url("images/landing-page/Light/how3-image.png")
+            center/cover no-repeat,
+        Frame-color: #ff783a,
+        Logo-image1: url("images/landing-page/Light/tonapi-logo.png") center
+            no-repeat,
+        Logo-image2: url("images/landing-page/Light/fragment-logo.png") center
+            no-repeat,
+        Logo-image3: url("images/landing-page/Light/tonscan-logo.png") center
+            no-repeat,
     ),
     dark: (
+        // temp
+        Background-color: #000000,
+
         TextColor: #ffffff,
         TextColorSec: #000000,
 
-        BtnOrange: #fc4c25,
-        BtnYellow: #feb752,
-        BtnWhite: #ffffff,
-        RedHaze: #ff000012,
-        WhiteHaze: #ffffff40,
-        GreenHaze: #2fff0014,
-        PurpleHaze: #c300ff1c,
-
         walletBackground: #000000a6,
         walletBtn: #ff5c11,
+        Section-background-img:
+            url("images/landing-page/Dark/hero-background.png") center/cover
+            no-repeat,
+        Hero-title-background: url("images/landing-page/Dark/hero-logo.png")
+            left no-repeat,
+        Frame-background: rgba(255, 255, 255, 0.28),
+        Discover-image: url("images/landing-page/Dark/Discover-app.png")
+            left/cover no-repeat,
+        Browser-image: url("images/landing-page/Dark/how1-image.png")
+            center/cover no-repeat,
+        BtnWhite: #ffffff,
+        Telegram-image1: url("images/landing-page/Dark/how2-image1.png")
+            bottom/cover no-repeat,
+        Telegram-image2: url("images/landing-page/Dark/how2-image2.png")
+            bottom/cover no-repeat,
+        check-image: url("images/landing-page/Dark/how3-image.png") center/cover
+            no-repeat,
+        Frame-color: #ffffff,
+        Logo-image1: url("images/landing-page/Dark/tonapi-logo.png") center
+            no-repeat,
+        Logo-image2: url("images/landing-page/Dark/fragment-logo.png") center
+            no-repeat,
+        Logo-image3: url("images/landing-page/Dark/tonscan-logo.png") center
+            no-repeat,
     ),
 );
 
-$selected-theme: dark !default;
+// $selected-theme: dark !default;
+$selected-theme: light !default;

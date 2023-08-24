@@ -1,7 +1,9 @@
 .footer-section {
     width: 100%;
     height: 80px;
-    color: white;
+    @include customize() {
+        color: getValue(TextColor);
+    }
     font-family: Ubuntu;
     font-weight: 500;
     display: flex;

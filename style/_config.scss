@@ -1,3 +1,7 @@
+@import "colors";
+@import "mixin";
+@import "functions";
+
 * {
     padding: 0;
     margin: 0;
@@ -6,6 +10,8 @@
 }
 
 body {
-    background-color: #000;
+    @include customize() {
+        background-color: getValue(Background-color);
+    }
     width: 100%;
 }

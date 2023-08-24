@@ -21,13 +21,18 @@
 }
 
 .hero-section {
-    background: url("images/landing-page/Dark/hero-background.png") center/cover
-        no-repeat;
+    // problem
+    // background-color: white;
+    // @include customize() {
+    //     background: getValue(Section-background-img);
+    // }
     width: 92vw;
     border-radius: 2rem;
     height: 74rem;
     margin: 13rem auto 0;
-    color: white;
+    @include customize() {
+        color: getValue(TextColor);
+    }
 
     .hero-img {
         width: 84vw;
@@ -36,8 +41,8 @@
         position: absolute;
         right: 0;
         top: 0;
-        background: url("images/landing-page/Both/hero-triangle.png") center/cover
-            no-repeat;
+        background: url("images/landing-page/Both/hero-triangle.png")
+            center/cover no-repeat;
     }
 
     .hero-content {
@@ -49,7 +54,9 @@
         left: 8rem;
 
         &-title {
-            background: url("images/landing-page/Dark/hero-logo.png") left no-repeat;
+            @include customize() {
+                background: getValue(Hero-title-background);
+            }
             padding-left: 9.5rem;
             display: inline;
             font-size: 7.7rem;
@@ -77,8 +84,12 @@
 
 .discover-section {
     margin: 12.5rem auto 9.5rem;
-    background: linear-gradient(rgba(255, 0, 0, 0.07), rgba(255, 0, 0, 0.07)),
-        url("images/landing-page/Dark/hero-background.png") center/cover no-repeat;
+    // problem
+    background-color: white;
+    // background: linear-gradient(rgba(255, 0, 0, 0.07), rgba(255, 0, 0, 0.07)),
+    //     url("images/landing-page/Dark/hero-background.png") center/cover
+    //         no-repeat;
+
     width: 92vw;
     height: 82rem;
     border-radius: 2rem;
@@ -102,8 +113,9 @@
     }
 
     .discover-app {
-        background: url("images/landing-page/Dark/Discover-app.png") left/cover
-            no-repeat;
+        @include customize() {
+            background: getValue(Discover-image);
+        }
         width: 50.5vw;
         max-width: 869px;
         height: 700px;
@@ -188,12 +200,15 @@
 
 .browser-intro {
     position: relative;
-    background: linear-gradient(rgba(255, 0, 0, 0.07), rgba(255, 0, 0, 0.07)),
-        url("images/landing-page/Dark/hero-background.png") center/cover no-repeat;
+    // problem
+    background-color: white;
+    // background: linear-gradient(rgba(255, 0, 0, 0.07), rgba(255, 0, 0, 0.07)),
+    //     url("images/landing-page/Dark/hero-background.png") center/cover
+    //         no-repeat;
 
     .splash-of-color {
-        background: url("images/landing-page/Both/how1-background.png") right/cover
-            no-repeat;
+        background: url("images/landing-page/Both/how1-background.png")
+            right/cover no-repeat;
         background-position: 150px;
         opacity: 0.9;
     }
@@ -239,8 +254,9 @@
         // border: 1px solid white;
         width: 510px;
         height: 550px;
-        background: url("images/landing-page/Dark/how1-image.png") center/cover
-            no-repeat;
+        @include customize() {
+            background: getValue(Browser-image);
+        }
         position: absolute;
         right: 3vw;
         bottom: 0;
@@ -250,15 +266,19 @@
 
 .telegram-intro {
     position: relative;
+    // problem
     background: linear-gradient(
             rgba(255, 255, 255, 0.25),
             rgba(255, 255, 255, 0.25)
         ),
-        url("images/landing-page/Dark/hero-background.png") center/cover no-repeat;
+        url("images/landing-page/Dark/hero-background.png") center/cover
+            no-repeat;
+    color: white;
+    overflow: hidden;
 
     .splash-of-color {
-        background: url("images/landing-page/Both/how2-background.png") center/cover
-            no-repeat;
+        background: url("images/landing-page/Both/how2-background.png")
+            center/cover no-repeat;
         opacity: 0.8;
         width: 900px;
     }
@@ -300,8 +320,9 @@
     .telegram-img1 {
         width: 346px;
         height: 532px;
-        background: url("images/landing-page/Dark/how2-image1.png") bottom/cover
-            no-repeat;
+        @include customize() {
+            background: getValue(Telegram-image1);
+        }
         position: absolute;
         right: 19.25vw;
         bottom: 0;
@@ -313,25 +334,30 @@
     .telegram-img2 {
         width: 352px;
         height: 410px;
-        background: url("images/landing-page/Dark/how2-image2.png") bottom/cover
-            no-repeat;
+        @include customize() {
+            background: getValue(Telegram-image2);
+        }
         position: absolute;
         right: 6.5vw;
         bottom: 0;
         z-index: 2;
         border-radius: 20px 20px 0 0;
-        border: 1px solid rgb(84, 84, 84);
+        // border: 1px solid rgb(84, 84, 84);
+        box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.05);
     }
 }
 
 .check-intro {
     position: relative;
-    background: linear-gradient(rgba(47, 255, 0, 0.08), rgba(47, 255, 0, 0.08)),
-        url("images/landing-page/Dark/hero-background.png") center/cover no-repeat;
+    // problem
+    background-color: white;
+    // background: linear-gradient(rgba(47, 255, 0, 0.08), rgba(47, 255, 0, 0.08)),
+    //     url("images/landing-page/Dark/hero-background.png") center/cover
+    //         no-repeat;
 
     .splash-of-color {
-        background: url("images/landing-page/Both/how3-background.png") right/cover
-            no-repeat;
+        background: url("images/landing-page/Both/how3-background.png")
+            right/cover no-repeat;
         background-position: 220px;
         opacity: 0.7;
     }
@@ -378,8 +404,10 @@
         width: 665px;
         // width: 43vw;
         height: 528px;
-        background: url("images/landing-page/Dark/how3-image.png") center/cover
-            no-repeat;
+        // problem
+        @include customize() {
+            background: getValue(check-image);
+        }
         position: absolute;
         right: 5.2vw;
         bottom: 1vw;
@@ -478,20 +506,23 @@
         }
 
         .logo-img1 {
-            background: url("images/landing-page/Dark/tonapi-logo.png") center
-                no-repeat;
+            @include customize() {
+                background: getValue(Logo-image1);
+            }
             background-size: 180px;
         }
 
         .logo-img2 {
-            background: url("images/landing-page/Dark/fragment-logo.png") center
-                no-repeat;
+            @include customize() {
+                background: getValue(Logo-image2);
+            }
             background-size: 180px;
         }
 
         .logo-img3 {
-            background: url("images/landing-page/Dark/tonscan-logo.png") center
-                no-repeat;
+            @include customize() {
+                background: getValue(Logo-image3);
+            }
             background-size: 170px;
         }
     }
@@ -499,11 +530,14 @@
 
 .recap-section {
     margin: 12.5rem auto 9.5rem;
-    background: linear-gradient(
-            rgba(195, 0, 255, 0.11),
-            rgba(195, 0, 255, 0.11)
-        ),
-        url("images/landing-page/Dark/hero-background.png") center/cover no-repeat;
+    // problem
+    background-color: white;
+    // background: linear-gradient(
+    //         rgba(195, 0, 255, 0.11),
+    //         rgba(195, 0, 255, 0.11)
+    //     ),
+    //     url("images/landing-page/Dark/hero-background.png") center/cover
+    //         no-repeat;
     width: 92vw;
     height: 92rem;
     border-radius: 2rem;

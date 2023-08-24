@@ -14,3 +14,7 @@ function updateBorder() {
 updateBorder();
 
 window.addEventListener("resize", updateBorder);
+
+document.getElementById("change-theme").addEventListener("click", () => {
+    console.log("yes");
+});

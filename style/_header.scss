@@ -1,3 +1,7 @@
+@import "colors";
+@import "mixin";
+@import "functions";
+
 .header-section {
     width: 100%;
     height: 12rem;
@@ -5,10 +9,41 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     border-bottom: 1px solid #333;
-    color: white;
+    @include customize() {
+        color: getValue(TextColor);
+    }
     position: absolute;
     top: 0;
     left: 0;
     z-index: 4;
+
+    p {
+        font-size: 40px;
+    }
+
+    button {
+        font-size: 20px;
+        padding: 5px;
+        border-radius: 5px;
+        border: 1px solid black;
+        cursor: pointer;
+        opacity: 0.95;
+        transition: all 0.15s;
+        @include customize() {
+            background: getValue(Section-background-img);
+        }
+        @include customize() {
+            color: getValue(TextColor);
+        }
+
+        &:hover {
+            opacity: 1;
+        }
+
+        &:active {
+            opacity: 0.85;
+        }
+    }
 }

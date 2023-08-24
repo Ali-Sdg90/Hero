@@ -19,6 +19,10 @@ body {
   align-items: center;
   border-bottom: 1px solid #333;
   color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 4;
 }
 
 * {
@@ -36,7 +40,7 @@ body {
 .btn-arrow {
   width: 2.6rem;
   height: 2.6rem;
-  background: url("images/landing-page/Forward-arrow.svg") center/cover no-repeat;
+  background: url("images/landing-page/Both/Forward-arrow.svg") center/cover no-repeat;
   /* border: 0.1rem solid blue; */
   display: inline-block;
   margin-left: 1.2rem;
@@ -49,11 +53,11 @@ body {
 }
 
 .hero-section {
-  background: url("images/landing-page/hero-background.png") center/cover no-repeat;
+  background: url("images/landing-page/Dark/hero-background.png") center/cover no-repeat;
   width: 92vw;
   border-radius: 2rem;
   height: 74rem;
-  margin: 1rem auto 0;
+  margin: 13rem auto 0;
   color: white;
 }
 .hero-section .hero-img {
@@ -63,7 +67,7 @@ body {
   position: absolute;
   right: 0;
   top: 0;
-  background: url("images/landing-page/hero-triangle.png") center/cover no-repeat;
+  background: url("images/landing-page/Both/hero-triangle.png") center/cover no-repeat;
 }
 .hero-section .hero-content {
   width: 45vw;
@@ -74,7 +78,7 @@ body {
   left: 8rem;
 }
 .hero-section .hero-content-title {
-  background: url("images/landing-page/hero-logo.svg") left no-repeat;
+  background: url("images/landing-page/Dark/hero-logo.png") left no-repeat;
   padding-left: 9.5rem;
   display: inline;
   font-size: 7.7rem;
@@ -117,7 +121,7 @@ body {
 
 .discover-section {
   margin: 12.5rem auto 9.5rem;
-  background: linear-gradient(rgba(255, 0, 0, 0.07), rgba(255, 0, 0, 0.07)), url("images/landing-page/hero-background.png") center/cover no-repeat;
+  background: linear-gradient(rgba(255, 0, 0, 0.07), rgba(255, 0, 0, 0.07)), url("images/landing-page/Dark/hero-background.png") center/cover no-repeat;
   width: 92vw;
   height: 82rem;
   border-radius: 2rem;
@@ -130,12 +134,12 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: url("images/landing-page/Discover-background.png") right/cover no-repeat;
+  background: url("images/landing-page/Both/Discover-background.png") right/cover no-repeat;
   opacity: 0.9;
   border-radius: 2rem;
 }
 .discover-section .discover-app {
-  background: url("images/landing-page/Discover-app.png") left/cover no-repeat;
+  background: url("images/landing-page/Dark/Discover-app.png") left/cover no-repeat;
   width: 50.5vw;
   max-width: 869px;
   height: 700px;
@@ -226,10 +230,10 @@ body {
 
 .browser-intro {
   position: relative;
-  background: linear-gradient(rgba(255, 0, 0, 0.07), rgba(255, 0, 0, 0.07)), url("images/landing-page/hero-background.png") center/cover no-repeat;
+  background: linear-gradient(rgba(255, 0, 0, 0.07), rgba(255, 0, 0, 0.07)), url("images/landing-page/Dark/hero-background.png") center/cover no-repeat;
 }
 .browser-intro .splash-of-color {
-  background: url("images/landing-page/how1-background.png") right/cover no-repeat;
+  background: url("images/landing-page/Both/how1-background.png") right/cover no-repeat;
   background-position: 150px;
   opacity: 0.9;
 }
@@ -297,7 +301,7 @@ body {
 .browser-intro .browser-img {
   width: 510px;
   height: 550px;
-  background: url("images/landing-page/how1-image.png") center/cover no-repeat;
+  background: url("images/landing-page/Dark/how1-image.png") center/cover no-repeat;
   position: absolute;
   right: 3vw;
   bottom: 0;
@@ -306,10 +310,10 @@ body {
 
 .telegram-intro {
   position: relative;
-  background: linear-gradient(rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.25)), url("images/landing-page/hero-background.png") center/cover no-repeat;
+  background: linear-gradient(rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.25)), url("images/landing-page/Dark/hero-background.png") center/cover no-repeat;
 }
 .telegram-intro .splash-of-color {
-  background: url("images/landing-page/how2-background.png") center/cover no-repeat;
+  background: url("images/landing-page/Both/how2-background.png") center/cover no-repeat;
   opacity: 0.8;
   width: 900px;
 }
@@ -366,7 +370,7 @@ body {
 .telegram-intro .telegram-img1 {
   width: 346px;
   height: 532px;
-  background: url("images/landing-page/how2-image1.png") bottom/cover no-repeat;
+  background: url("images/landing-page/Dark/how2-image1.png") bottom/cover no-repeat;
   position: absolute;
   right: 19.25vw;
   bottom: 0;
@@ -375,22 +379,22 @@ body {
 }
 .telegram-intro .telegram-img2 {
   width: 352px;
-  height: 440px;
-  background: url("images/landing-page/how2-image2.png") bottom/cover no-repeat;
+  height: 410px;
+  background: url("images/landing-page/Dark/how2-image2.png") bottom/cover no-repeat;
   position: absolute;
-  right: 99px;
   right: 6.5vw;
   bottom: 0;
   z-index: 2;
   border-radius: 20px 20px 0 0;
+  border: 1px solid rgb(84, 84, 84);
 }
 
 .check-intro {
   position: relative;
-  background: linear-gradient(rgba(47, 255, 0, 0.08), rgba(47, 255, 0, 0.08)), url("images/landing-page/hero-background.png") center/cover no-repeat;
+  background: linear-gradient(rgba(47, 255, 0, 0.08), rgba(47, 255, 0, 0.08)), url("images/landing-page/Dark/hero-background.png") center/cover no-repeat;
 }
 .check-intro .splash-of-color {
-  background: url("images/landing-page/how3-background.png") right/cover no-repeat;
+  background: url("images/landing-page/Both/how3-background.png") right/cover no-repeat;
   background-position: 220px;
   opacity: 0.7;
 }
@@ -458,7 +462,7 @@ body {
 .check-intro .check-img {
   width: 665px;
   height: 528px;
-  background: url("images/landing-page/how3-image.png") center/cover no-repeat;
+  background: url("images/landing-page/Dark/how3-image.png") center/cover no-repeat;
   position: absolute;
   right: 5.2vw;
   bottom: 1vw;
@@ -536,21 +540,21 @@ body {
   height: 60px;
 }
 .work-seamlessly-section .work-seamlessly-logo .logo-img1 {
-  background: url("images/landing-page/tonapi-logo.png") center no-repeat;
+  background: url("images/landing-page/Dark/tonapi-logo.png") center no-repeat;
   background-size: 180px;
 }
 .work-seamlessly-section .work-seamlessly-logo .logo-img2 {
-  background: url("images/landing-page/fragment-logo.png") center no-repeat;
+  background: url("images/landing-page/Dark/fragment-logo.png") center no-repeat;
   background-size: 180px;
 }
 .work-seamlessly-section .work-seamlessly-logo .logo-img3 {
-  background: url("images/landing-page/tonscan-logo.png") center no-repeat;
+  background: url("images/landing-page/Dark/tonscan-logo.png") center no-repeat;
   background-size: 170px;
 }
 
 .recap-section {
   margin: 12.5rem auto 9.5rem;
-  background: linear-gradient(rgba(195, 0, 255, 0.11), rgba(195, 0, 255, 0.11)), url("images/landing-page/hero-background.png") center/cover no-repeat;
+  background: linear-gradient(rgba(195, 0, 255, 0.11), rgba(195, 0, 255, 0.11)), url("images/landing-page/Dark/hero-background.png") center/cover no-repeat;
   width: 92vw;
   height: 92rem;
   border-radius: 2rem;
@@ -614,7 +618,7 @@ body {
   position: absolute;
   right: 0;
   top: 0;
-  background: url("images/landing-page/recap-img.png") center/cover no-repeat;
+  background: url("images/landing-page/Both/recap-img.png") center/cover no-repeat;
 }
 
 .footer-section {

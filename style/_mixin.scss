@@ -1,4 +1,4 @@
-@import "colors";
+// @import "colors";
 @import "functions";
 
 @mixin customize($theme: $selected-theme) {
@@ -75,3 +75,7 @@
         transform: translate(0, 2px);
     }
 }
+
+// @mixin discover-background-mixin(){
+
+// }

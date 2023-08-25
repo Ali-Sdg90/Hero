@@ -59,12 +59,11 @@ body {
 .btn-arrow {
   width: 2.6rem;
   height: 2.6rem;
-  background: url("images/landing-page/Both/Forward-arrow-white.svg") center/cover no-repeat;
-  /* border: 0.1rem solid blue; */
+  background: url("images/landing-page/Both/Forward-arrow-white.png") center/cover no-repeat;
   display: inline-block;
   margin-left: 1.2rem;
   position: relative;
-  top: 0.4rem;
+  top: 0.55rem;
 }
 
 .hero-section {
@@ -316,7 +315,7 @@ body {
   transform: translate(0, 2px);
 }
 .browser-intro .browser-content .browser-btn .btn-arrow {
-  filter: invert(100%) sepia(4%) saturate(916%) hue-rotate(228deg) brightness(112%) contrast(101%);
+  background: url("images/landing-page/Both/Forward-arrow-black.png");
 }
 .browser-intro .browser-img {
   width: 510px;
@@ -390,7 +389,7 @@ body {
   transform: translate(0, 2px);
 }
 .telegram-intro .telegram-content .telegram-btn .btn-arrow {
-  filter: invert(100%) sepia(4%) saturate(916%) hue-rotate(228deg) brightness(112%) contrast(101%);
+  background: url("images/landing-page/Both/Forward-arrow-black.png");
 }
 .telegram-intro .telegram-img1 {
   width: 346px;
@@ -514,6 +513,7 @@ body {
   background-color: transparent;
   color: rgb(255, 243, 237);
   font-size: 18px;
+  box-sizing: border-box;
 }
 .check-intro .check-wallet-adrs .wallet-input:focus {
   outline: none;

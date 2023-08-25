@@ -7,14 +7,12 @@ $themes: (
 
         TextColor: #000000,
         TextColorSec: #ffffff,
-
         walletBackground: #f3f2f2,
         walletBtn: #ff5c11,
-
         Hero-background-img: none,
         Hero-title-background: url("images/landing-page/Light/hero-logo.png")
             left no-repeat,
-        Frame-background: #fff1ea,
+        Frame-background: #ffe7da,
         Discover-background-img:
             linear-gradient(rgb(255, 235, 219), rgb(255, 235, 219)),
         Discover-image: url("images/landing-page/Light/Discover-app.png")
@@ -38,7 +36,9 @@ $themes: (
         Logo-image3: url("images/landing-page/Light/tonscan-logo.png") center
             no-repeat,
         Recap-background-image: #fff,
-        Arrow-filter: none,
+        // Arrow-filter: none,
+        Change-color-Arrow:
+            url("images/landing-page/Both/Forward-arrow-white.png"),
     ),
     dark: (
         // temp
@@ -46,7 +46,6 @@ $themes: (
 
         TextColor: #ffffff,
         TextColorSec: #000000,
-
         walletBackground: #000000a6,
         walletBtn: #ff5c11,
         Hero-background-img: url("images/landing-page/Dark/hero-background.png")
@@ -92,10 +91,12 @@ $themes: (
             unquote(
                 "linear-gradient(rgba(195, 0, 255, 0.11), rgba(195, 0, 255, 0.11)), url('images/landing-page/Dark/hero-background.png') center/cover no-repeat"
             ),
-        Arrow-filter: invert(100%) sepia(4%) saturate(916%) hue-rotate(228deg)
-            brightness(112%) contrast(101%),
+        // Arrow-filter: invert(100%) sepia(4%) saturate(916%) hue-rotate(228deg)
+        //     brightness(112%) contrast(101%),
+        Change-color-Arrow:
+            url("images/landing-page/Both/Forward-arrow-black.png"),
     ),
 );
 
 $selected-theme: dark !default;
-$selected-theme: light !default;
+// $selected-theme: light !default;

@@ -42,7 +42,7 @@
     @include customize() {
         color: getValue(Frame-color);
     }
-    display: inline;
+    display: inline-block;
     padding: 11px 22px;
     font-size: 2.4rem;
     font-family: Roboto;
